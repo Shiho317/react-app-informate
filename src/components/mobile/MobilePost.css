@@ -1,0 +1,204 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+/*==================for mobile========================*/
+@media screen and (max-width: 40rem) {
+  .header {
+    text-align: center;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 99;
+    background-color: #ffffff86;
+  }
+  .postpage {
+    position: relative;
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5%;
+  }
+  .back__btn {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color: #bdbdbd;
+  }
+  .back__btn:hover {
+    opacity: 0.5;
+  }
+  .list {
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+  }
+  .list::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    border-bottom: #ffffff 2px solid;
+    border-right: #ffffff 2px solid;
+    -webkit-transform: rotate(45deg) translateY(-30%);
+            transform: rotate(45deg) translateY(-30%);
+  }
+  .list select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    text-align: center;
+    width: 80%;
+    height: 56px;
+    padding: 5px 0px;
+    font-size: 22px;
+    border-radius: 7px 7px 0 0;
+    border: none;
+    outline: none;
+    background: #07122a;
+    color: #ffffff;
+  }
+  .input {
+    position: relative;
+    top: 5%;
+    width: 80%;
+    margin: 0 auto;
+    height: 300px;
+    background-color: transparent;
+    border: 2px solid #07122a;
+    outline: none;
+    border-radius: 0 0 7px 7px;
+  }
+  .input .comment {
+    color: #07122a;
+    outline: none;
+    position: absolute;
+    margin: 10px;
+    top: 0;
+    left: 0;
+    height: 275px;
+    width: 96%;
+    border: transparent;
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+  }
+  #preview {
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    left: 50px;
+  }
+  .file {
+    text-align: center;
+    position: relative;
+    top: 0;
+  }
+  .file .photo {
+    display: inline-block;
+    position: absolute;
+    left: 40px;
+    cursor: pointer;
+    padding: 10px 10px;
+  }
+  .file .photo:hover {
+    opacity: 0.5;
+  }
+  .file .photo input {
+    display: none;
+  }
+  .file .url {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    cursor: pointer;
+    width: 100px;
+  }
+  .file .url:hover {
+    opacity: 0.5;
+  }
+  .file .url i {
+    margin-top: 2px;
+  }
+  .file .url input {
+    outline: none;
+  }
+  .provide {
+    display: block;
+    text-align: right;
+    position: relative;
+    top: 80px;
+    right: 45px;
+  }
+  .provide__btn {
+    font-size: 17px;
+    background-color: #07122a;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    width: 100px;
+    height: 35px;
+    -webkit-box-shadow: 0 0 5px #07122a;
+            box-shadow: 0 0 5px #07122a;
+  }
+  .provide__btn:hover {
+    opacity: 0.5;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    margin-top: 50px;
+    background-color: #07122a;
+    height: 90px;
+  }
+  .footer .ft__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 20px;
+  }
+  .footer .ft__icon .icon--home {
+    opacity: 0.5;
+  }
+  .footer .ft__icon .icon--home:hover {
+    opacity: 1;
+  }
+  .footer .ft__icon .icon--post {
+    opacity: 0.5;
+  }
+  .footer .ft__icon .icon--post:hover {
+    opacity: 1;
+  }
+  .footer .ft__icon .icon--search {
+    opacity: 0.5;
+  }
+  .footer .ft__icon .icon--search:hover {
+    opacity: 1;
+  }
+  .footer .ft__icon .icon--user {
+    opacity: 0.5;
+  }
+  .footer .ft__icon .icon--user:hover {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=MobilePost.css.map */

@@ -1,0 +1,56 @@
+$cBlack: #07122a;
+$cWhite: #ffffff;
+$cGray: #bdbdbd;
+/*==================for laptop========================*/
+@media screen and (min-width: 40rem){
+
+  .tweet{
+    position: relative;
+    top: 90px;
+    margin-left: 50px;
+    display: flex;
+    width: 90%;
+
+    &:not(:last-child){
+      border-bottom: 1px solid $cGray;
+    }
+
+    & .icon-container{
+      margin-top: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid $cBlack;
+
+      & img{
+        width: 50px;
+      }
+    }
+
+    & .body-container{
+      flex: 1;
+      padding: 20px;
+      background-color: $cWhite;
+
+      & .status-display{
+        
+        & .display-name{
+          font-size: 15px;
+          color: $cBlack;
+        }
+
+        & .account-name{
+          font-size: 5px;
+          color: #979494;
+          padding-left: 5px;
+        }
+      }
+
+      & .content{
+        font-size: 20px;
+        color: $cBlack;
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+$cBlack: #07122a;
+$cWhite: #ffffff;
+$cGray: #bdbdbd;
+
+.nav-bar{
+  background-color: #ffffff86;
+  height: 80px;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+
+  &--container{
+    height: 80px;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &--logo{
+    position: relative;
+    left: 19%;
+
+    & .logo{
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  & ul{
+    padding-top: 25px;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.nav-item{
+  list-style: none;
+}
+
+.nav-links{
+  color: #030730;
+  text-decoration: none;
+  height: 100%;
+  padding: 1.5rem 1rem;
+  
+  &:hover{
+    border-bottom: 4px solid $cBlack;
+    transition: all 0.2s ease-out;
+    font-weight: bold;
+  }
+}
+
+.btn--Post{
+  position: absolute;
+  top: 20px;
+  right: 16%;
+  padding: 9px 42px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: $cBlack;
+  color: $cWhite;
+  transition: all 0.3s ease-out;
+
+  &:hover{
+    opacity: 0.5;
+    transition: 250ms;
+  }
+}
+
+.btn--signUp{
+  padding: 8px 20px;
+  font-size: 20px;
+  border: 1px solid $cBlack;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: $cBlack;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+
+  &:hover{
+    background-color: $cBlack;
+    color: $cWhite;
+    transition: 250ms;
+  }
+}
+
+/*==================for mobile========================*/
+@media screen and (max-width: 40rem){
+
+.header{
+  text-align: center;
+  top: 0;
+  position: sticky;
+  z-index: 99;
+  background-color: #ffffff86;
+}
+
+}
+
+
+

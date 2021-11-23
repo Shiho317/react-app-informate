@@ -1,0 +1,460 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+/*==================for mobile========================*/
+@media screen and (max-width: 40rem) {
+  .accountpage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .profile {
+    height: 100%;
+  }
+  .profile .hello {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+  .profile .hello h1 {
+    font-size: 15px;
+    color: #07122a;
+  }
+  .profile__icon {
+    margin-top: 90px;
+    display: block;
+    text-align: center;
+  }
+  .profile__icon .icon__img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #07122a;
+    border-radius: 50px;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  .profile__icon .icon__change .change {
+    font-size: 13px;
+    color: #494949;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    opacity: 0.5;
+  }
+  .profile__icon .icon__change .change:hover {
+    opacity: 1;
+  }
+  .profile__data {
+    margin: 50px;
+  }
+  .profile__data .user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 35px;
+    border-bottom: 1px solid #07122a;
+    background-color: #ffffff44;
+    -webkit-box-shadow: 0 0 5px #ffffff44;
+            box-shadow: 0 0 5px #ffffff44;
+    border-radius: 4px;
+  }
+  .profile__data .user h6 {
+    padding-top: 9px;
+    margin: 0;
+  }
+  .profile__data .user__name {
+    margin: 0;
+    padding-top: 2px;
+    width: 165px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .profile__data .country {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 55px;
+    border-bottom: 1px solid #07122a;
+    background-color: #ffffff44;
+    -webkit-box-shadow: 0 0 5px #ffffff44;
+            box-shadow: 0 0 5px #ffffff44;
+    border-radius: 4px;
+  }
+  .profile__data .country h6 {
+    padding-top: 9px;
+    margin: 0;
+  }
+  .profile__data .country__name {
+    margin: 0;
+    padding-top: 2px;
+    width: 165px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .profile__data .city {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 25px;
+    border-bottom: 1px solid #07122a;
+    background-color: #ffffff44;
+    -webkit-box-shadow: 0 0 5px #ffffff44;
+            box-shadow: 0 0 5px #ffffff44;
+    border-radius: 4px;
+  }
+  .profile__data .city h6 {
+    padding-top: 9px;
+    margin: 0;
+  }
+  .profile__data .city__name {
+    margin: 0;
+    padding-top: 2px;
+    width: 165px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .profile__data .twitter {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+    border-bottom: 1px solid #07122a;
+    background-color: #ffffff44;
+    -webkit-box-shadow: 0 0 5px #ffffff44;
+            box-shadow: 0 0 5px #ffffff44;
+    border-radius: 4px;
+  }
+  .profile__data .twitter h6 {
+    padding-top: 9px;
+    margin: 0;
+  }
+  .profile__data .twitter__name {
+    margin: 0;
+    padding-top: 2px;
+    width: 165px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .profile__data .profile__edit {
+    margin-top: 10px;
+    text-align: end;
+  }
+  .profile__data .profile__edit .edit {
+    font-size: 13px;
+    color: #494949;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    opacity: 0.5;
+  }
+  .profile__data .profile__edit .edit:hover {
+    opacity: 1;
+  }
+  .modal {
+    width: 100%;
+    position: fixed;
+    top: 13%;
+    background-color: #07122a;
+    color: #ffffff;
+    border-radius: 15px;
+    z-index: 100;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .modal .btn--close-modal {
+    color: #817f7f;
+    opacity: 0.5;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .modal .profile__modal {
+    margin-top: 70px;
+    display: block;
+    text-align: center;
+  }
+  .modal .profile__modal .modal__img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #07122a;
+    border-radius: 50px;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  .modal .profile__modal .icon__change .change--inmodal {
+    font-size: 13px;
+    color: #817f7f;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    opacity: 0.5;
+  }
+  .modal .profile__modal .icon__change .change--inmodal:hover {
+    opacity: 1;
+  }
+  .modal .profile__data {
+    margin: 50px;
+  }
+  .modal .profile__data .modal__user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 35px;
+    border-bottom: 1px solid #142342;
+  }
+  .modal .profile__data .modal__user h6 {
+    padding-top: 9px;
+    margin: 0;
+  }
+  .modal .profile__data .modal__user #modal__user {
+    margin: 0;
+    padding-top: 7px;
+    width: 165px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #bdbdbd;
+  }
+  .modal .profile__data .modal__country {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 55px;
+    border-bottom: 1px solid #142342;
+  }
+  .modal .profile__data .modal__country h6 {
+    padding-top: 9px;
+    margin: 0;
+  }
+  .modal .profile__data .modal__country #modal__country {
+    color: #757474;
+    margin: 0;
+    padding-top: 6px;
+    width: 165px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .modal .profile__data .modal__city {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 25px;
+    border-bottom: 1px solid #142342;
+  }
+  .modal .profile__data .modal__city h6 {
+    padding-top: 9px;
+    margin: 0;
+  }
+  .modal .profile__data .modal__city #modal__city {
+    margin: 0;
+    padding-top: 7px;
+    width: 165px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #bdbdbd;
+  }
+  .modal .profile__data .modal__twitter {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+    border-bottom: 1px solid #142342;
+  }
+  .modal .profile__data .modal__twitter h6 {
+    padding-top: 9px;
+    margin: 0;
+  }
+  .modal .profile__data .modal__twitter #modal__twitter {
+    margin: 0;
+    padding-top: 7px;
+    width: 165px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #bdbdbd;
+  }
+  .modal .profile__data .profile__edit {
+    margin-top: 10px;
+    text-align: end;
+  }
+  .modal .profile__data .profile__edit .done {
+    font-size: 13px;
+    color: #817f7f;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    opacity: 0.5;
+  }
+  .modal .profile__data .profile__edit .done:hover {
+    opacity: 1;
+  }
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .close__concent {
+    position: fixed;
+    padding: 20px;
+    top: 40%;
+    left: 14.5%;
+    background-color: #ffffff;
+    width: 60%;
+    z-index: 300;
+    border-radius: 5px;
+  }
+  .close__concent h3 {
+    -webkit-text-decoration: underline #f1ee10 5px;
+            text-decoration: underline #f1ee10 5px;
+    text-align: center;
+    font-size: 10px;
+  }
+  .close__concent p {
+    font-size: 8px;
+  }
+  .close__concent .choose--btn {
+    text-align: right;
+  }
+  .close__concent .choose--btn .close {
+    padding: 4px 5px;
+    outline: none;
+    border: none;
+    background: #bdbdbd;
+  }
+  .close__concent .choose--btn .cancel {
+    padding: 4px 5px;
+    outline: none;
+    border: none;
+    background: #bdbdbd;
+  }
+  .alert {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .chooseyours {
+    position: fixed;
+    top: 0;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #ffffffe1;
+    z-index: 200;
+  }
+  .chooseyours .btn--close-choose {
+    color: #817f7f;
+    opacity: 0.5;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .chooseyours h3 {
+    font-size: 15px;
+  }
+  .show {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    margin-top: 62px;
+    background-color: #07122a;
+    height: 90px;
+  }
+  .footer .ft__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 20px;
+  }
+  .footer .ft__icon .icon--home {
+    opacity: 0.5;
+  }
+  .footer .ft__icon .icon--home:hover {
+    opacity: 1;
+  }
+  .footer .ft__icon .icon--post {
+    opacity: 0.5;
+  }
+  .footer .ft__icon .icon--post:hover {
+    opacity: 1;
+  }
+  .footer .ft__icon .icon--search {
+    opacity: 0.5;
+  }
+  .footer .ft__icon .icon--search:hover {
+    opacity: 1;
+  }
+  .footer .ft__icon .icon--user {
+    opacity: 0.5;
+  }
+  .footer .ft__icon .icon--user:hover {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=MobileAccount.css.map */

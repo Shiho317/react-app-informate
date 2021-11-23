@@ -1,0 +1,174 @@
+$cBlack: #07122a;
+$cWhite: #ffffff;
+$cGray: #bdbdbd;
+/*==================for mobile========================*/
+@media screen and (min-width: 40rem){
+
+  .postpage{
+    position: relative;
+    top: 10%;
+    background-color: $cWhite;
+    height: 80%;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5%;
+  }
+
+  .back__btn--close{
+    position: relative;
+    top: 10px;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    margin: 30;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    color: $cGray;
+
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  .list{
+    position: relative;
+    top: 5%;
+    text-align: center;
+    
+    &::before{
+      content:"";
+      display:block;
+      width:10px;
+      height:10px;
+      position:absolute;
+      left:20%;
+      top:40%;
+      border-bottom: $cWhite 2px solid;
+      border-right: $cWhite 2px solid;
+      transform:rotate(45deg)translateY(-30%);
+      }
+
+    & select{
+      appearance: none;
+      text-align: center;
+      width: 80%;
+      height: 56px;
+      padding: 5px 0px;
+      font-size: 22px;
+      border-radius: 7px 7px 0 0 ;
+      border: none;
+      outline: none;
+      background: $cBlack;
+      color: $cWhite;
+    }
+  }
+
+  
+  .input{
+      position: relative;
+      top: 5%;
+      width: 80%;
+      margin: 0 auto;
+      height: 300px;
+      background-color: transparent;
+      border: 2px solid $cBlack;
+      outline: none;
+      border-radius: 0 0 7px 7px;
+    
+      & .comment{
+        color: $cBlack;
+        outline: none;
+        position: absolute;
+        margin: 10px;
+        top: 0;
+        left: 0;
+        height: 275px;
+        width: 96%;
+        border: transparent;
+        background-color: transparent;
+        font-size: 20px;
+        text-align: center;
+      
+    }
+  }
+  
+
+  #preview{
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    left: 50px;
+  }
+
+  .file{
+    text-align: center;
+    position: relative;
+    top: 10px;
+    
+    & .photo{
+      display: inline-block;
+      position: absolute;
+      left: 65px;
+      cursor: pointer;
+      padding: 10px 10px;
+
+      &:hover{
+        opacity: 0.5;
+      }
+
+      & input{
+        display: none;
+      }
+    }
+
+
+    & .url{
+      display: flex;
+      gap: 5px;
+      position: absolute;
+      top: 10px;
+      left: 130px;
+      cursor: pointer;
+      width: 100px;
+
+      &:hover{
+        opacity: 0.5;
+      }
+
+      & i{
+        margin-top: 2px;
+      }
+
+      & input{
+        outline: none;
+      }
+
+    }
+  }
+
+  .provide{
+    display: block;
+    text-align: right;
+    position: relative;
+    top:80px;
+    right: 45px;
+
+    &__btn{
+      font-size: 17px;
+      background-color: $cBlack;
+      color: $cWhite;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      border-radius: 7px;
+      width: 100px;
+      height: 35px;
+      box-shadow: 0 0 5px $cBlack;
+
+      &:hover{
+        opacity: 0.5;
+      }
+    }
+  }
+}
