@@ -1,5 +1,5 @@
 import React from 'react';
-import './MobileSearch.css';
+import '../styles/MobileSearch.css';
 import {Link} from 'react-router-dom';
 import WrapImg1 from '../../images/wrap_spot.png';
 import WrapImg2 from '../../images/wrap_education.png';

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './MobileAccount.css';
+import '../styles/MobileAccount.css';
 import {Link} from 'react-router-dom';
 import InputColor from 'react-input-color';
 import ChooseLogo1 from '../../images/choose_logo-1.png';

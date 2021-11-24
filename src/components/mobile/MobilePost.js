@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './MobilePost.css';
+import '../styles/MobilePost.css';
 import {Link} from 'react-router-dom';
 import logo from '../../images/InforMATE_logo.PNG';
 

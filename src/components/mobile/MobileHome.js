@@ -1,5 +1,5 @@
 import React from 'react';
-import './MobileHome.css';
+import '../styles/MobileHome.css';
 import {Link} from 'react-router-dom';
 import slideImg1 from '../../images/topicicon-1.jpg';
 import slideImg2 from '../../images/topicicon-2.jpg';
