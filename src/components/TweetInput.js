@@ -1,5 +1,5 @@
 import React, { useState, useCallback} from 'react';
-import './TweetInput.css';
+import './styles/TweetInput.css';
 
 
 function TweetInput({openPost, setOpenPost, setTweets, tweets}) {

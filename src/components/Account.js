@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import '../App.css';
-import './Account.css';
+import './styles/Account.css';
 import InputColor from 'react-input-color';
 import ChooseLogo1 from '../images/choose_logo-1.png';
 import ChooseLogo2 from '../images/choose_logo-2.png';

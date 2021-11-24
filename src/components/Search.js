@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import './Search.css';
+import './styles/Search.css';
 import WrapImg1 from '../images/wrap_spot.png';
 import WrapImg2 from '../images/wrap_education.png';
 import WrapImg3 from '../images/wrap_health.png';

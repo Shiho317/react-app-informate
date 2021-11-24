@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import logo from '../images/InforMATE_logo.PNG';
 import {Link} from 'react-router-dom';
-import './navBar.css';
+import './styles/navBar.css';
 import TweetInput from './TweetInput';
 
 
