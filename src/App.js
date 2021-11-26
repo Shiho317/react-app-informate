@@ -5,7 +5,7 @@ import HomePage from './components/pages/HomePage';
 import SearchPage from './components/pages/SearchPage';
 import AccountPage from './components/pages/AccountPage';
 import PostPage from './components/pages/PostPage';
-import TweetPage from './components/pages/TweetPage';
+
 import topImage from './images/home_img.png';
 import introImage from './images/InforMATE_logo.PNG';
 import inforMateLogo from './images/InforMATE_logo.PNG';
@@ -21,7 +21,7 @@ function App() {
         <Route path="/searchpage" element={<SearchPage/>} />
         <Route path="/accountpage" element={<AccountPage/>} />
         <Route path="/postpage" element={<PostPage/>} />
-        <Route path="/tweetpage" element={<TweetPage/>} />
+        
       </Routes>
     </Router>
   </div>

@@ -51,6 +51,10 @@ $cGray: #bdbdbd;
         color: $cBlack;
         font-weight: bold;
       }
+
+      & .status-liked{
+        cursor: pointer;
+      }
     }
   }
 }

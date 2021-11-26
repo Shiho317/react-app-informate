@@ -1,4 +1,4 @@
-import React, {useState}from 'react';
+import React, {useState} from 'react';
 import Timeline from './Timeline';
 import TweetInput from './TweetInput';
 import Icon0 from '../images/choose_logo-1.png';

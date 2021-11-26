@@ -43,5 +43,8 @@
     color: #07122a;
     font-weight: bold;
   }
+  .tweet .body-container .status-liked {
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=Tweets.css.map */

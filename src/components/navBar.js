@@ -10,7 +10,7 @@ function NavBar() {
   const [openPost, setOpenPost] = useState(false);
 
   const OpenPost = () => {
-    setOpenPost(true)
+    setOpenPost((prev) => !prev)
   }
 
 
@@ -75,7 +75,7 @@ function NavBar() {
             </div>
           )}
 
-          <TweetInput openPost={openPost} setOpenPost={setOpenPost}/>
+          <TweetInput openPost={openPost} OpenPost={OpenPost}/>
     </div>
   )
 }

@@ -1,12 +1,8 @@
-import React, { useState, useCallback} from 'react';
+import React, { useState } from 'react';
 import './styles/TweetInput.css';
 
 
-function TweetInput({openPost, setOpenPost, setTweets, tweets}) {
-  
-  const ClosePost = () => {
-    setOpenPost(false)
-  };
+function TweetInput({openPost, OpenPost, tweets, setTweets}) {
 
   const [textAreaValue, setTextAreaValue] = useState('');
 
@@ -14,36 +10,24 @@ function TweetInput({openPost, setOpenPost, setTweets, tweets}) {
     setTextAreaValue(e.target.value)
   };
 
-  const addTweet = useCallback((tweet) => setTweets((prev) => [tweet, ...prev]), [setTweets]);
 
-  const sendTweet = () => {
+  const addTweet = (tweet) => {
+    setTweets(prev => [tweet, ...prev])
+  }
+
+  const  sendTweet = () => {
     if(textAreaValue){
-      addTweet({
-        id: new Date().getTime(), 
-        icon: '☠️', 
-        displayName: 'ミスター死',
-        accountName: 'mrdeath',
-        content: textAreaValue
-      })
-    }
-  };
-  
-  // const textareaRef = useRef(null);
+    addTweet({
+      id: new Date().getTime(), 
+      icon: 'Me', 
+      displayName: 'ms.Jane',
+      accountName: 'msJane',
+      content: textAreaValue
+    })
+  }
+};
 
-  // const sendTweet = useCallback((props) => {
-
-  //   const addTweet = props.addTweet
-
-  //   if(textareaRef.current) {
-  //     addTweet({
-  //       id: new Date().getTime(), 
-  //       icon: '☠️', 
-  //       displayName: 'ミスター死',
-  //       accountName: 'mrdeath',
-  //       content: textareaRef.current.value
-  //     });
-  //   }
-  // }, [textareaRef.current, props.addTweet]);
+  console.log(tweets)
 
   return (
     <div>
@@ -51,7 +35,7 @@ function TweetInput({openPost, setOpenPost, setTweets, tweets}) {
       <div id="overlay">
     <div className="postpage">
     <div className="back__btn">
-      <button className="back__btn--close" onClick={ClosePost}>&times;</button>
+      <button className="back__btn--close" onClick={OpenPost}>&times;</button>
     </div>
     <div className="list">
       <select name ="list__category" id="category">
@@ -70,7 +54,7 @@ function TweetInput({openPost, setOpenPost, setTweets, tweets}) {
       </div>
     
     <div className="provide">
-    <button className="provide__btn" onClick={() => {sendTweet(); ClosePost();}}>Provide</button>
+    <button className="provide__btn" onClick={() => {sendTweet(); OpenPost();}}>Provide</button>
     </div>
     </div>
     
