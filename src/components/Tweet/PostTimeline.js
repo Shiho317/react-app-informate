@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import Timeline from './Timeline';
 import TweetInput from './TweetInput';
-import Icon0 from '../images/choose_logo-1.png';
-import Icon1 from '../images/choose_logo-11.png';
+import Icon0 from '../../images/choose_logo-1.png';
+import Icon1 from '../../images/choose_logo-11.png';
 
 
 function PostTimeline(){

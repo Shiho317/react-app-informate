@@ -1,5 +1,5 @@
 import React, {useState, useCallback} from 'react';
-import './styles/Tweets.css';
+import '../styles/Tweets.css';
 
 
 function Tweets(props){

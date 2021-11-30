@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import '../../App.css';
-import TweetInput from '../TweetInput';
+import TweetInput from '../Tweet/TweetInput';
 import MobilePost from '../mobile/MobilePost';
 
 export default function PostPage (addTweet) {

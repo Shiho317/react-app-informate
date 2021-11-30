@@ -2,17 +2,8 @@ import React, {useState, useEffect} from 'react';
 import logo from '../images/InforMATE_logo.PNG';
 import {Link} from 'react-router-dom';
 import './styles/navBar.css';
-import TweetInput from './TweetInput';
-
 
 function NavBar() {
-
-  const [openPost, setOpenPost] = useState(false);
-
-  const OpenPost = () => {
-    setOpenPost((prev) => !prev)
-  }
-
 
   const [showNav, setShowNav] = useState(true);
 
@@ -58,7 +49,7 @@ function NavBar() {
               <Link to="/" className="nav-bar--logo">
                 <img className="logo" src={logo} alt="logo"/>
               </Link>
-              <button className='btn--Post'  onClick={OpenPost}>Post</button>
+              <button className='btn--Post'>Post</button>
               
               <Link to="/">
                 <button className='btn--signUp'>SIGN UP</button>
@@ -75,7 +66,6 @@ function NavBar() {
             </div>
           )}
 
-          <TweetInput openPost={openPost} OpenPost={OpenPost}/>
     </div>
   )
 }

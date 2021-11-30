@@ -13,7 +13,7 @@ import slideImg9 from '../images/topicicon-9.jpg';
 import pTopicImg1 from '../images/personal_topic-1.png';
 import pTopicImg2 from '../images/personal_topic-2.png'; 
 import MobileHome from './mobile/MobileHome';
-import PostTimeline from './PostTimeline';
+import PostTimeline from './Tweet/PostTimeline';
 
 function Home(){
 
