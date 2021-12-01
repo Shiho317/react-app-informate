@@ -9,6 +9,7 @@ import WrapImg6 from '../images/wrap_trip.png';
 import WrapImg7 from '../images/wrap_others.png';
 import WrapImg8 from '../images/wrap_global.png';
 import MobileSearch from './mobile/MobileSearch';
+import PostTimeline from './Tweet/PostTimeline';
 
 function Search () {
 
@@ -31,7 +32,8 @@ function Search () {
   return(
     <div>
     {laptopSearch ? (
-      <div>
+    <div>
+      <div className="search-and-timeline">
     <div className="Search">
       <div className="wantToKnow">
         <h1>I want to know...</h1>
@@ -73,6 +75,11 @@ function Search () {
 
     </div>
     </div>
+      <div>
+        <PostTimeline/>
+      </div>
+    
+    </div>
 
     <div className="footer">
       <ul className="footer__list">
@@ -81,6 +88,7 @@ function Search () {
       </ul>
       <p>Copyright ©2021.ShihoNagano All Right Reserved.</p>
     </div>
+      
     </div>
     ) : (
       <MobileSearch />

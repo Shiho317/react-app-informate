@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import '../../App.css';
-import TweetInput from '../Tweet/TweetInput';
 import MobilePost from '../mobile/MobilePost';
 
 export default function PostPage (addTweet) {
@@ -23,7 +22,7 @@ export default function PostPage (addTweet) {
     return(
       <div>
       {laptopPost ? (
-        <TweetInput addTweet={addTweet}/>
+        <div>This page is not exist.</div>
       ) : (
         <MobilePost />
       )}

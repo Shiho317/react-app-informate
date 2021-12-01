@@ -10,80 +10,12 @@ $cGray: #bdbdbd;
 /*==================for mobile========================*/
 @media screen and (max-width: 40rem){
 
-  .header{
-    text-align: center;
-    top: 0;
-    position: sticky;
-    z-index: 99;
-    background-color: #ffffff86;
-  }
-
-  .postpage{
-    position: relative;
-    
-    background-color: $cWhite;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 5%;
-  }
-
-  .back__btn{
-    position: relative;
-    top: 10px;
-    left: 20px;
-    font-size: 24px;
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border: none;
-    color: $cGray;
-
-    &:hover{
-      opacity: 0.5;
-    }
-  }
-
-  .list{
-    margin-top: 50px;
-    position: relative;
-    text-align: center;
-    
-    &::before{
-      content:"";
-      display:block;
-      width:10px;
-      height:10px;
-      position:absolute;
-      left:20%;
-      top:40%;
-      border-bottom: $cWhite 2px solid;
-      border-right: $cWhite 2px solid;
-      transform:rotate(45deg)translateY(-30%);
-      }
-
-    & select{
-      appearance: none;
-      text-align: center;
-      width: 80%;
-      height: 56px;
-      padding: 5px 0px;
-      font-size: 22px;
-      border-radius: 7px 7px 0 0 ;
-      border: none;
-      outline: none;
-      background: $cBlack;
-      color: $cWhite;
-    }
-  }
-
-  
   .input{
       position: relative;
-      top: 5%;
-      width: 80%;
+      top: 20px;
+      width: 70%;
       margin: 0 auto;
-      height: 300px;
+      height: 200px;
       background-color: transparent;
       border: 2px solid $cBlack;
       outline: none;
@@ -96,8 +28,8 @@ $cGray: #bdbdbd;
         margin: 10px;
         top: 0;
         left: 0;
-        height: 275px;
-        width: 96%;
+        height: 70%;
+        width: 95%;
         border: transparent;
         background-color: transparent;
         font-size: 20px;
@@ -106,77 +38,23 @@ $cGray: #bdbdbd;
     }
   }
   
-
-  #preview{
-    display: inline-block;
-    position: relative;
-    top: 60px;
-    left: 50px;
-  }
-
-  .file{
-    text-align: center;
-    position: relative;
-    top: 0;
-    
-    & .photo{
-      display: inline-block;
-      position: absolute;
-      left: 40px;
-      cursor: pointer;
-      padding: 10px 10px;
-
-      &:hover{
-        opacity: 0.5;
-      }
-
-      & input{
-        display: none;
-      }
-    }
-
-
-    & .url{
-      display: flex;
-      gap: 5px;
-      position: absolute;
-      top: 10px;
-      left: 90px;
-      cursor: pointer;
-      width: 100px;
-
-      &:hover{
-        opacity: 0.5;
-      }
-
-      & i{
-        margin-top: 2px;
-      }
-
-      & input{
-        outline: none;
-      }
-
-    }
-  }
-
   .provide{
     display: block;
     text-align: right;
     position: relative;
-    top:80px;
-    right: 45px;
+    top: 40px;
+    right: 150px;
 
     &__btn{
-      font-size: 17px;
+      font-size: 15px;
       background-color: $cBlack;
       color: $cWhite;
       outline: none;
       border: none;
       cursor: pointer;
       border-radius: 7px;
-      width: 100px;
-      height: 35px;
+      width: 80px;
+      height: 30px;
       box-shadow: 0 0 5px $cBlack;
 
       &:hover{
@@ -185,50 +63,82 @@ $cGray: #bdbdbd;
     }
   }
 
-  .footer{
-    position: fixed;
-    bottom: 0;
-    margin-top: 50px;
-    background-color: $cBlack;
-    height: 90px;
+  .tweet{
+    position: relative;
+    top: 60px;
+    margin-left: 50px;
+    display: flex;
+    width: 90%;
 
-    & .ft__icon{
-      display: flex;
-      justify-content: space-around;
-      padding-top: 20px;
+    &:not(:last-child){
+      border-bottom: 1px solid $cGray;
+    }
 
-      & .icon--home{
-        opacity: 0.5;
+    & .icon-container{
+      margin-top: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid $cBlack;
 
-        &:hover{
-          opacity: 1;
+      & img{
+        width: 50px;
+      }
+    }
+
+    & .body-container{
+      flex: 1;
+      padding: 20px;
+      background-color: $cWhite;
+
+      & .status-display{
+        
+        & .display-name{
+          font-size: 15px;
+          color: $cBlack;
+        }
+
+        & .account-name{
+          font-size: 5px;
+          color: #979494;
+          padding-left: 5px;
         }
       }
 
-      & .icon--post{
-        opacity: 0.5;
-
-        &:hover{
-          opacity: 1;
-        }
+      & .content{
+        font-size: 20px;
+        color: $cBlack;
+        font-weight: bold;
       }
 
-      & .icon--search{
-        opacity: 0.5;
-
-        &:hover{
-          opacity: 1;
-        }
-      }
-
-      & .icon--user{
-        opacity: 0.5;
-
-        &:hover{
-          opacity: 1;
-        }
+      & .status-liked{
+        cursor: pointer;
       }
     }
   }
 
+  .footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+    background-color: $cBlack;
+    height: 90px;
+
+& .ft__icon{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+
+  & .icon--btn{
+    color: $cGray;
+    opacity: 0.5;
+  }
+
+  & .icon--active{
+      color: $cWhite;
+      opacity: 1;
+    }
+}
 }

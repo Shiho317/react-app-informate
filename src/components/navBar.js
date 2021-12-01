@@ -49,7 +49,10 @@ function NavBar() {
               <Link to="/" className="nav-bar--logo">
                 <img className="logo" src={logo} alt="logo"/>
               </Link>
-              <button className='btn--Post'>Post</button>
+
+              <Link to="/homepage">
+                <button className='btn--Post'>Post</button>
+              </Link>
               
               <Link to="/">
                 <button className='btn--signUp'>SIGN UP</button>

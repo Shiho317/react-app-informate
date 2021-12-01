@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './styles/SignIn.css';
-import inforMateLogo from '../images/InforMATE_logo.PNG';
+import '../styles/SignIn.css';
+import inforMateLogo from '../../images/InforMATE_logo.PNG';
 
 function SignIn({showSignIn, setShowSignIn, setShowSignUp, accounts}){
 
@@ -64,6 +64,7 @@ function SignIn({showSignIn, setShowSignIn, setShowSignUp, accounts}){
     if(currentPassword === inputPassword){
           setCheckPassword(true);
           setShowSignIn(false);
+          setShowWelcomeBack(true)
           console.log('yay')
         }else if(currentPassword !== inputPassword){
           setCheckPassword(false);
@@ -113,15 +114,15 @@ function SignIn({showSignIn, setShowSignIn, setShowSignUp, accounts}){
 
   const [showWelcomeBack, setShowWelcomeBack] = useState(false)
 
-  const ShowWelcomeBack = () => {
-    if(checkPassword){
-      setShowWelcomeBack(true);
-      console.log('yay')
-    }else{
-      setShowWelcomeBack(false)
-      console.log('nah')
-    }
-  };
+  // const ShowWelcomeBack = () => {
+  //   if(checkPassword === true){
+  //     setShowWelcomeBack(true);
+  //     console.log('yay')
+  //   }else{
+  //     setShowWelcomeBack(false)
+  //     console.log('nah')
+  //   }
+  // };
 
   const JumpToAccount = () => {
 
@@ -165,14 +166,14 @@ function SignIn({showSignIn, setShowSignIn, setShowSignUp, accounts}){
           ) : (
             <p className="error">
             {judgeError ? 
-              '⚠️ Your email or password is not correct.' : '*Enter blank at last character.'}
+              '⚠️ Your email or password is not correct.' : ''}
             </p>
           )}
           
         </div>
 
           <div className="login">
-          <button className="login--btn" onClick={() => {FindAccount(); ShowWelcomeBack(); SetJudgeError();}}>Log in</button>
+          <button className="login--btn" onClick={() => {FindAccount(); SetJudgeError();}}>Log in</button>
           </div>
         
         <hr className="border--signin" />

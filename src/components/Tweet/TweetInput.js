@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/TweetInput.css';
+import Logo3 from '../../images/choose_logo-3.png';
 
 
 function TweetInput({tweets, setTweets}) {
@@ -19,7 +20,7 @@ function TweetInput({tweets, setTweets}) {
     if(textAreaValue){
     addTweet({
       id: new Date().getTime(), 
-      icon: 'Me', 
+      icon: Logo3, 
       displayName: 'ms.Jane',
       accountName: 'msJane',
       content: textAreaValue
@@ -32,7 +33,7 @@ function TweetInput({tweets, setTweets}) {
   return (
     <React.Fragment>
       <div className="input">
-        <textarea  className="comment" onChange={TextAreaValue} name="comment" placeholder="Let's share imformation!" cols="30" rows="20"/>
+        <textarea  className="comment" onChange={TextAreaValue} name="comment" placeholder="Let's share imformation!" cols="20" rows="10"/>
       </div>
     
     <div className="provide">

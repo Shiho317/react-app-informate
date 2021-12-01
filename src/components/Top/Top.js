@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
-import './styles/Top.css';
-import topImage from '../images/home_img.png';
-import introImage from '../images/InforMATE_logo.PNG';
+import '../styles/Top.css';
+import topImage from '../../images/home_img.png';
+import introImage from '../../images/InforMATE_logo.PNG';
 
 function Top(){
 

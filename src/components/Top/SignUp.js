@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './styles/SignUp.css';
-import inforMateLogo from '../images/InforMATE_logo.PNG';
+import '../styles/SignUp.css';
+import inforMateLogo from '../../images/InforMATE_logo.PNG';
 
 function SignUp({showSignUp, setShowSignUp, setShowSignIn, accounts}){
 

@@ -5,6 +5,14 @@
     height: 100%;
     border-right: 1px solid #bdbdbd;
   }
+  .search-and-timeline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
   .wantToKnow {
     position: relative;
     top: 10px;

@@ -10,6 +10,12 @@ $cGray: #bdbdbd;
     border-right: 1px solid $cGray;
   }
 
+  .search-and-timeline{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
   .wantToKnow{
     position: relative;
     top: 10px;

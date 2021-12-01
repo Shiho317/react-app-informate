@@ -6,75 +6,12 @@
 
 /*==================for mobile========================*/
 @media screen and (max-width: 40rem) {
-  .header {
-    text-align: center;
-    top: 0;
-    position: -webkit-sticky;
-    position: sticky;
-    z-index: 99;
-    background-color: #ffffff86;
-  }
-  .postpage {
-    position: relative;
-    background-color: #ffffff;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 5%;
-  }
-  .back__btn {
-    position: relative;
-    top: 10px;
-    left: 20px;
-    font-size: 24px;
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border: none;
-    color: #bdbdbd;
-  }
-  .back__btn:hover {
-    opacity: 0.5;
-  }
-  .list {
-    margin-top: 50px;
-    position: relative;
-    text-align: center;
-  }
-  .list::before {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    left: 20%;
-    top: 40%;
-    border-bottom: #ffffff 2px solid;
-    border-right: #ffffff 2px solid;
-    -webkit-transform: rotate(45deg) translateY(-30%);
-            transform: rotate(45deg) translateY(-30%);
-  }
-  .list select {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    text-align: center;
-    width: 80%;
-    height: 56px;
-    padding: 5px 0px;
-    font-size: 22px;
-    border-radius: 7px 7px 0 0;
-    border: none;
-    outline: none;
-    background: #07122a;
-    color: #ffffff;
-  }
   .input {
     position: relative;
-    top: 5%;
-    width: 80%;
+    top: 20px;
+    width: 70%;
     margin: 0 auto;
-    height: 300px;
+    height: 200px;
     background-color: transparent;
     border: 2px solid #07122a;
     outline: none;
@@ -87,83 +24,86 @@
     margin: 10px;
     top: 0;
     left: 0;
-    height: 275px;
-    width: 96%;
+    height: 70%;
+    width: 95%;
     border: transparent;
     background-color: transparent;
     font-size: 20px;
     text-align: center;
   }
-  #preview {
-    display: inline-block;
-    position: relative;
-    top: 60px;
-    left: 50px;
-  }
-  .file {
-    text-align: center;
-    position: relative;
-    top: 0;
-  }
-  .file .photo {
-    display: inline-block;
-    position: absolute;
-    left: 40px;
-    cursor: pointer;
-    padding: 10px 10px;
-  }
-  .file .photo:hover {
-    opacity: 0.5;
-  }
-  .file .photo input {
-    display: none;
-  }
-  .file .url {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 5px;
-    position: absolute;
-    top: 10px;
-    left: 90px;
-    cursor: pointer;
-    width: 100px;
-  }
-  .file .url:hover {
-    opacity: 0.5;
-  }
-  .file .url i {
-    margin-top: 2px;
-  }
-  .file .url input {
-    outline: none;
-  }
   .provide {
     display: block;
     text-align: right;
     position: relative;
-    top: 80px;
-    right: 45px;
+    top: 40px;
+    right: 150px;
   }
   .provide__btn {
-    font-size: 17px;
+    font-size: 15px;
     background-color: #07122a;
     color: #ffffff;
     outline: none;
     border: none;
     cursor: pointer;
     border-radius: 7px;
-    width: 100px;
-    height: 35px;
+    width: 80px;
+    height: 30px;
     -webkit-box-shadow: 0 0 5px #07122a;
             box-shadow: 0 0 5px #07122a;
   }
   .provide__btn:hover {
     opacity: 0.5;
   }
+  .tweet {
+    position: relative;
+    top: 60px;
+    margin-left: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+  }
+  .tweet:not(:last-child) {
+    border-bottom: 1px solid #bdbdbd;
+  }
+  .tweet .icon-container {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #07122a;
+  }
+  .tweet .icon-container img {
+    width: 50px;
+  }
+  .tweet .body-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  .tweet .body-container .status-display .display-name {
+    font-size: 15px;
+    color: #07122a;
+  }
+  .tweet .body-container .status-display .account-name {
+    font-size: 5px;
+    color: #979494;
+    padding-left: 5px;
+  }
+  .tweet .body-container .content {
+    font-size: 20px;
+    color: #07122a;
+    font-weight: bold;
+  }
+  .tweet .body-container .status-liked {
+    cursor: pointer;
+  }
   .footer {
     position: fixed;
     bottom: 0;
+    width: 100%;
     margin-top: 50px;
     background-color: #07122a;
     height: 90px;
@@ -176,28 +116,12 @@
         justify-content: space-around;
     padding-top: 20px;
   }
-  .footer .ft__icon .icon--home {
+  .footer .icon--btn {
+    color: #bdbdbd;
     opacity: 0.5;
   }
-  .footer .ft__icon .icon--home:hover {
-    opacity: 1;
-  }
-  .footer .ft__icon .icon--post {
-    opacity: 0.5;
-  }
-  .footer .ft__icon .icon--post:hover {
-    opacity: 1;
-  }
-  .footer .ft__icon .icon--search {
-    opacity: 0.5;
-  }
-  .footer .ft__icon .icon--search:hover {
-    opacity: 1;
-  }
-  .footer .ft__icon .icon--user {
-    opacity: 0.5;
-  }
-  .footer .ft__icon .icon--user:hover {
+  .footer .icon--active {
+    color: #ffffff;
     opacity: 1;
   }
 }

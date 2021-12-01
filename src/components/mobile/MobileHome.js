@@ -1,45 +1,21 @@
 import React from 'react';
 import '../styles/MobileHome.css';
 import {Link} from 'react-router-dom';
-import slideImg1 from '../../images/topicicon-1.jpg';
-import slideImg2 from '../../images/topicicon-2.jpg';
-import slideImg3 from '../../images/topicicon-3.jpg';
-import slideImg4 from '../../images/topicicon-4.jpg';
-import slideImg5 from '../../images/topicicon-5.jpg';
-import slideImg6 from '../../images/topicicon-6.jpg';
-import slideImg7 from '../../images/topicicon-7.jpg';
-import slideImg8 from '../../images/topicicon-8.jpg';
-import slideImg9 from '../../images/topicicon-9.jpg';
+import Slider from './Slider/Slider';
 import pTopicImg1 from '../../images/personal_topic-1.png';
 import pTopicImg2 from '../../images/personal_topic-2.png'; 
 
 function MobileHome () {
 
+
+
   return(
     <div className= 'body'>
       <div className="topic">
       <h1>Topic</h1>
-      <div className="slide">
-        <img className="slide__img1" src={slideImg1} alt="exchange"/>
-        <img className="slide__img2" src={slideImg2} alt="money"/>
-        <img className="slide__img3" src={slideImg3} alt="spot"/>
-      </div>
-      <div className="slide">
-        <img className="slide__img4" src={slideImg4} alt="education"/>
-        <img className="slide__img5" src={slideImg5} alt="health"/>
-        <img className="slide__img6" src={slideImg6} alt="house"/>
-      </div>
-      <div className="slide">
-        <img className="slide__img7" src={slideImg7} alt="living"/>
-        <img className="slide__img8" src={slideImg8} alt="trip"/>
-        <img className="slide__img9" src={slideImg9} alt="others"/>
-      </div>
-  <div>
-    <button className="slider__btn slider__btn--left">&larr;</button>
-    <button className="slider__btn slider__btn--right">&rarr;</button>
-    <div className="dots"></div>
-  </div>
-  </div>
+
+      <Slider/>
+    </div>
 
   <div className="personal_topic">
     <h1>Personal Topic</h1>
