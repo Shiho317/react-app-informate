@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import '../../App.css';
 import MobilePost from '../mobile/MobilePost';
 
-export default function PostPage (addTweet) {
+export default function PostPage () {
   const[laptopPost, setLaptopPost] = useState(true);
 
   const LaptopPost = () => {

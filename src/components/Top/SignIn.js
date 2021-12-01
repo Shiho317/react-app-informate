@@ -25,13 +25,6 @@ function SignIn({showSignIn, setShowSignIn, setShowSignUp, accounts}){
     setInputEmail(e.target.value);
   }
 
-  // const CheckAccount = (acc => {
-  //   if(acc.email === inputEmail)
-  //   return acc.email
-  // });
-
-  // console.log(accounts)
-
   const [judgeError, setJudgeError] = useState(false);
 
   const SetJudgeError = () => {
@@ -72,57 +65,7 @@ function SignIn({showSignIn, setShowSignIn, setShowSignUp, accounts}){
 
   }
 
-
-  // const FindAccount = () => {
-  //   setCurrentAccount(accounts.find(CheckAccount));
-  //   console.log(currentAccount);
-  // }
-
-  // const [currentName, setCurrentName] = useState('');
-
-  // const GetCurrentName = () => {
-  //   const splitName = currentAccount.name.split(' ');
-  //   setCurrentName(splitName[0])
-  //   console.log(splitName)
-  // }
-
-  
-  // const [inputPassword, setInputPassword] = useState('');
-
-  // const InputPassword = (e) => {
-  //   setInputPassword(e.target.value)
-  //   console.log(inputPassword)
-  // };
-
-  // const [checkPassword, setCheckPassword] = useState(true);
-
-  // const [currentPassword, setCurrentPassword] = useState('');
-
-  // const GetCurrentPassword = () => {
-  //   setCurrentPassword(currentAccount.password);
-  //   console.log(currentPassword);
-  // }
-
-  // const CheckPassword = () => {
-  //   if(currentPassword === inputPassword){
-  //     setCheckPassword(true);
-  //     setShowSignIn(false);
-  //   }else if(currentPassword !== inputPassword){
-  //     setCheckPassword(false);
-  //   }
-  // };
-
   const [showWelcomeBack, setShowWelcomeBack] = useState(false)
-
-  // const ShowWelcomeBack = () => {
-  //   if(checkPassword === true){
-  //     setShowWelcomeBack(true);
-  //     console.log('yay')
-  //   }else{
-  //     setShowWelcomeBack(false)
-  //     console.log('nah')
-  //   }
-  // };
 
   const JumpToAccount = () => {
 
