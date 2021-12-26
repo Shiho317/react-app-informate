@@ -87,6 +87,7 @@ function SignIn({showSignIn, setShowSignIn, setShowSignUp, accounts}){
           <p className="sign-in">Welcome back!<br/>
           Please fill this blank below to sign in.</p>
 
+        <div className='form-section'>
         <div className="sign-email">
           <label htmlFor='email-check'>Email
           <input className="email-check" type="text" onChange={InputEmail}/>
@@ -112,7 +113,7 @@ function SignIn({showSignIn, setShowSignIn, setShowSignUp, accounts}){
               '⚠️ Your email or password is not correct.' : ''}
             </p>
           )}
-          
+        </div>
         </div>
 
           <div className="login">
@@ -138,7 +139,8 @@ function SignIn({showSignIn, setShowSignIn, setShowSignUp, accounts}){
 
       {showWelcomeBack ? (
         <div className="welcome-back">
-        `<h2>Welcome back!<br/>Let's get started.</h2>` <img src={inforMateLogo} alt='logo'/>;
+          <h2>Welcome back!<br/>Let's get started.</h2>
+          <img src={inforMateLogo} alt='logo'/>
         </div>
       ) : (
         <div className="welcome-back"></div>

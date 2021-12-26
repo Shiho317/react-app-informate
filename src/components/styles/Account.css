@@ -448,7 +448,7 @@
     background: #bdbdbd;
   }
   .chooseyours {
-    position: fixed;
+    position: absolute;
     top: 30%;
     left: 5%;
     width: 90%;
@@ -456,7 +456,7 @@
     text-align: center;
     background-color: #ffffffe1;
     border-radius: 15px;
-    z-index: 200;
+    z-index: 100;
   }
   .chooseyours .btn--close-choose {
     color: #817f7f;
@@ -468,6 +468,7 @@
     background: none;
     cursor: pointer;
     font-size: 30px;
+    z-index: 101;
   }
   .chooseyours h3 {
     font-size: 15px;

@@ -22,8 +22,11 @@
   .join-modal {
     position: fixed;
     top: 12%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     height: 70%;
-    margin: 10px;
+    width: 300px;
     padding: 30px 25px;
     background-color: #ffffff;
     border-radius: 30px;
@@ -48,38 +51,44 @@
   .join-modal .joinus {
     font-size: 13px;
   }
+  .join-modal .form-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
   .join-modal .name--input {
-    margin-top: 50px;
-    margin-bottom: 35px;
+    margin-top: 20px;
   }
   .join-modal .name--input label {
-    padding: 10px;
-    font-size: 15px;
+    padding: 8px;
+    font-size: 12px;
     border: 1px solid #07122a;
     border-radius: 50px;
   }
   .join-modal .name--input label .name {
     background: transparent;
     border: none;
-    margin-left: 53px;
+    margin-left: 10px;
     outline: none;
-    width: 185px;
-  }
-  .join-modal .email--input {
-    margin-bottom: 35px;
+    width: 75%;
   }
   .join-modal .email--input label {
-    padding: 10px;
-    font-size: 15px;
+    padding: 8px;
+    font-size: 12px;
     border: 1px solid #07122a;
     border-radius: 50px;
   }
   .join-modal .email--input label .email {
     background: transparent;
     border: none;
-    margin-left: 58px;
+    margin-left: 10px;
     outline: none;
-    width: 185px;
+    width: 76%;
   }
   .join-modal .email--input .exist {
     font-size: 10px;
@@ -87,11 +96,10 @@
   }
   .join-modal .password--input {
     position: relative;
-    margin-bottom: 20px;
   }
   .join-modal .password--input label {
-    padding: 10px;
-    font-size: 15px;
+    padding: 8px;
+    font-size: 12px;
     border: 1px solid #07122a;
     border-radius: 50px;
   }
@@ -99,8 +107,8 @@
     background: transparent;
     border: none;
     outline: none;
-    margin-left: 25px;
-    width: 185px;
+    margin-left: 10px;
+    width: 65%;
   }
   .join-modal .password--input label .password__lock {
     position: absolute;
@@ -113,12 +121,9 @@
     margin-top: 10px;
     font-size: 10px;
   }
-  .join-modal .confirm--input {
-    margin-bottom: 20px;
-  }
   .join-modal .confirm--input label {
-    padding: 10px;
-    font-size: 15px;
+    padding: 8px;
+    font-size: 12px;
     border: 1px solid #07122a;
     border-radius: 50px;
   }
@@ -127,18 +132,17 @@
     border: none;
     padding: 10px;
     outline: none;
-    width: 270px;
+    width: 92%;
   }
   .join-modal .confirm--input .notmatch {
     position: absolute;
-    margin-top: 10px;
     font-size: 10px;
     color: red;
   }
   .join-modal .signup {
     text-align: center;
     position: relative;
-    top: 20px;
+    top: 30px;
   }
   .join-modal .signup--btn {
     background-color: #07122a;
@@ -168,7 +172,7 @@
     font-size: 10px;
     position: absolute;
     top: 0;
-    right: 45px;
+    right: 20px;
     background-color: transparent;
     border: none;
     color: #57a0e4;

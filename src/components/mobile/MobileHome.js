@@ -7,8 +7,6 @@ import pTopicImg2 from '../../images/personal_topic-2.png';
 
 function MobileHome () {
 
-
-
   return(
     <div className= 'body'>
       <div className="topic">

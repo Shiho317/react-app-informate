@@ -22,8 +22,11 @@
   .signin-modal {
     position: fixed;
     top: 20%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     height: 50%;
-    margin: 10px;
+    width: 300px;
     padding: 30px 25px;
     background-color: #ffffff;
     border-radius: 30px;
@@ -45,33 +48,41 @@
     font-size: 25px;
     margin-bottom: 0;
   }
+  .signin-modal .form-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
   .signin-modal .sign-in {
-    font-size: 13px;
+    font-size: 12px;
   }
   .signin-modal .sign-email {
-    margin-top: 50px;
-    margin-bottom: 35px;
+    margin-top: 20px;
   }
   .signin-modal .sign-email label {
-    padding: 10px;
-    font-size: 15px;
+    padding: 8px;
+    font-size: 12px;
     border: 1px solid #07122a;
     border-radius: 50px;
+    width: 100%;
   }
   .signin-modal .sign-email label .email-check {
-    background: transparent;
     border: none;
-    margin-left: 42px;
+    margin-left: 10px;
     outline: none;
-    width: 188px;
+    width: 75%;
   }
   .signin-modal .sign-password {
     position: relative;
-    margin-bottom: 20px;
   }
   .signin-modal .sign-password label {
-    padding: 10px;
-    font-size: 15px;
+    padding: 8px;
+    font-size: 12px;
     border: 1px solid #07122a;
     border-radius: 50px;
   }
@@ -80,7 +91,7 @@
     border: none;
     outline: none;
     margin-left: 10px;
-    width: 188px;
+    width: 65%;
   }
   .signin-modal .sign-password label .password-check__lock {
     position: absolute;
@@ -153,28 +164,21 @@
 }
 
 .welcome-back {
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  width: 100vw;
+  z-index: 101;
+  display: block;
   text-align: center;
 }
 
 .welcome-back h2 {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 78%;
-  z-index: 101;
   color: #ffffff;
 }
 
 .welcome-back img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   width: 50%;
-  z-index: 100;
 }
 
 /*======================================for laptop======================================*/
@@ -322,31 +326,27 @@
     background-color: rgba(12, 12, 39, 0.5);
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
-    z-index: 102;
+    z-index: 99;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
   .welcome-back {
-    text-align: center;
-  }
-  .welcome-back h2 {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 78%;
-    z-index: 101;
-    color: #ffffff;
-  }
-  .welcome-back img {
     position: absolute;
     top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 20%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    text-align: center;
     z-index: 100;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .welcome-back h2 {
+    color: #ffffff;
+    width: 100vw;
+  }
+  .welcome-back img {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=SignIn.css.map */

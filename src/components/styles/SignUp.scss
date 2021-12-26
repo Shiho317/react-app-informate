@@ -25,8 +25,10 @@ $cGray: #bdbdbd;
   .join-modal{
     position: fixed;
     top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
     height: 70%;
-    margin: 10px;
+    width: 300px;
     padding: 30px 25px;
     background-color: $cWhite;
     border-radius: 30px;
@@ -52,41 +54,45 @@ $cGray: #bdbdbd;
       font-size: 13px;
     }
 
+    & .form-section{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
     & .name--input{
-      margin-top: 50px;
-      margin-bottom: 35px;
+      margin-top: 20px;
 
       & label{
-        padding: 10px;
-        font-size: 15px;
+        padding: 8px;
+        font-size: 12px;
         border: 1px solid $cBlack;
         border-radius: 50px;
 
         & .name{
           background: transparent;
           border: none;
-          margin-left: 53px;
+          margin-left: 10px;
           outline: none;
-          width: 185px;
+          width: 75%;
         }
       }
     }
 
     & .email--input{
-      margin-bottom: 35px;
 
       & label{
-        padding: 10px;
-        font-size: 15px;
+        padding: 8px;
+        font-size: 12px;
         border: 1px solid $cBlack;
         border-radius: 50px;
 
         & .email{
           background: transparent;
           border: none;
-          margin-left: 58px;
+          margin-left: 10px;
           outline: none;
-          width: 185px;
+          width: 76%;
         }
       }
 
@@ -98,11 +104,10 @@ $cGray: #bdbdbd;
 
     & .password--input{
       position: relative;
-      margin-bottom: 20px;
 
       & label{
-        padding: 10px;
-        font-size: 15px;
+        padding: 8px;
+        font-size: 12px;
         border: 1px solid $cBlack;
         border-radius: 50px;
 
@@ -110,8 +115,8 @@ $cGray: #bdbdbd;
           background: transparent;
           border: none;
           outline: none;
-          margin-left: 25px;
-          width: 185px;
+          margin-left: 10px;
+          width: 65%;
 
           &__lock{
             position: absolute;
@@ -130,11 +135,10 @@ $cGray: #bdbdbd;
     }
 
     & .confirm--input{
-        margin-bottom: 20px;
 
       & label{
-        padding: 10px;
-        font-size: 15px;
+        padding: 8px;
+        font-size: 12px;
         border: 1px solid $cBlack;
         border-radius: 50px;
         
@@ -143,13 +147,12 @@ $cGray: #bdbdbd;
           border: none;
           padding: 10px;
           outline: none;
-          width: 270px;
+          width: 92%;
         }
       }
       
       & .notmatch{
         position: absolute;
-        margin-top: 10px;
         font-size: 10px;
         color: red;
       }
@@ -160,7 +163,7 @@ $cGray: #bdbdbd;
     & .signup{
       text-align: center;
       position: relative;
-      top: 20px;
+      top: 30px;
 
       &--btn{
         background-color: $cBlack;
@@ -197,7 +200,7 @@ $cGray: #bdbdbd;
         font-size: 10px;
         position: absolute;
         top: 0;
-        right: 45px;
+        right: 20px;
         background-color: transparent;
         border: none;
         color: #57a0e4;

@@ -105,6 +105,7 @@ function SignUp({showSignUp, setShowSignUp, setShowSignIn, accounts}){
         <p className="joinus">Thank you, guest.<br/>
         Please fill this blank below to join us.</p>
 
+        <div className='form-section'>
         <div className="name--input">
         <label htmlFor='name'>Name
           <input className="name" type="text" value={inputName} onChange={InputName} required/>
@@ -145,10 +146,12 @@ function SignUp({showSignUp, setShowSignUp, setShowSignIn, accounts}){
         </label>
         {checkInputConfirm ? (
           <p className="notmatch">
+            Please put enter key at last.
           </p>
         ) : (
           <p className="notmatch" style={{color: 'red'}}>'⚠️ Your input is incorrect with your password.'</p>
         )}
+      </div>
       </div>
 
       <div className="signup">
@@ -177,7 +180,8 @@ function SignUp({showSignUp, setShowSignUp, setShowSignIn, accounts}){
 
     {submitSuccess ? (
       <div className="welcome-back">
-        `<h2>Welcome, {firstName}!<br/>Thank you for join!</h2>` <img src={inforMateLogo} alt='logo'/>;
+        <h2>Welcome, {firstName}!<br/>Thank you for join!</h2>
+        <img src={inforMateLogo} alt='logo'/>
       </div>
     ) : (
       <div className="welcome-back"></div>
