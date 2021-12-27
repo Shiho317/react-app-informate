@@ -65,7 +65,7 @@ function SignIn({showSignIn, setShowSignIn, setShowSignUp, accounts}){
 
   }
 
-  const [showWelcomeBack, setShowWelcomeBack] = useState(false)
+  const [showWelcomeBack, setShowWelcomeBack] = useState(false);
 
   const JumpToAccount = () => {
 
