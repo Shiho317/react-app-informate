@@ -146,7 +146,7 @@ function SignUp({showSignUp, setShowSignUp, setShowSignIn, accounts}){
         </label>
         {checkInputConfirm ? (
           <p className="notmatch">
-            Please put enter key at last.
+            Please put space key at last.
           </p>
         ) : (
           <p className="notmatch" style={{color: 'red'}}>'⚠️ Your input is incorrect with your password.'</p>
