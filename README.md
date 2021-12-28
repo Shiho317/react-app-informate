@@ -8,6 +8,8 @@
 
 ![informate-demo-3](https://user-images.githubusercontent.com/88401910/147528358-4d2754a5-286d-4dcb-9ce2-4b55f6d4525c.jpg)
 
+https://trusting-wilson-3e96c1.netlify.app/
+
 ## Languages/Frameworks
 
 `react`, `sass`
